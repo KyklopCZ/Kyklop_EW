@@ -1,0 +1,1 @@
+kyk_ew_jammerScriptEnabled = false;
