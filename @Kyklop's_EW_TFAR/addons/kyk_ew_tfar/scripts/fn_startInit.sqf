@@ -1,0 +1,1 @@
+[] spawn kyk_ew_tfar_fnc_init;
