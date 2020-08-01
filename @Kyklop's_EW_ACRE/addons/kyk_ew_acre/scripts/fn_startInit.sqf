@@ -1,0 +1,1 @@
+[] spawn kyk_ew_acre_fnc_init;
