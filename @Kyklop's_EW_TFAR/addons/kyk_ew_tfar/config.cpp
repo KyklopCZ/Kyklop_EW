@@ -5,9 +5,9 @@ class CfgPatches
 		units[] = {};
 		requiredAddons[] = { "kyk_ew", "tfar_core" };
 		author = "KyklopCZ";
-		version = 1.1.0;
-		versionStr = "1.1.0";
-		versionAr[] = {1,1,0};
+		version = 1.2.0;
+		versionStr = "1.2.0";
+		versionAr[] = {1,2,0};
 	};
 };
 

@@ -1,10 +1,10 @@
 name = "Kyklop's electronic warfare mod TFAR compatibility";
 /// Picture displayed from the expansions menu/ Optimal size is 2048x1024, other sizes work too
-picture = "kyk_ew\icons\Steam main 1024x1024.paa"; 
+picture = "kyk_ew_tfar\icons\Steam TFAR 1024x1024.paa"; 
 /// Display next to the item added by the mod
-logoSmall = "kyk_ew\icons\ace\EW.paa";
+logoSmall = "kyk_ew_tfar\icons\Icon.paa";
 /// Logo displayed in the main menu
-logo = "kyk_ew\icons\ace\EW.paa";
+logo = "kyk_ew_tfar\icons\Icon.paa";
 /// Tool tip displayed when the mouse is left over, in the main menu of Arma 3
 tooltipOwned = "Kyklop's electronic warfare mod TFAR compatibility";
 /// Color used for DLC stripes and backgrounds (RGBA)
