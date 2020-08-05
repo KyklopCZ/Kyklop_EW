@@ -2,7 +2,7 @@ params ["_jammer"];
 
 if(isServer) then
 {
-	private _message = parseText "<t size='1.5' color='#ff0000'>Jammer alert</t><t>Jammer is now inoperable</t>";
+	private _message = parseText "<t size='1.5' color='#ff0000'>Jammer alert</t><br /><t>Jammer is now inoperable</t>";
 	
 	if(_jammer isKindOf "Man") then
 	{
