@@ -4,6 +4,8 @@ params ["_object", "_jammingType"];	//jammingType: 0-all, 1-radio, 2-GSM, 3-RFDe
 
 if(isServer) then
 {
+	private _jammer = _object;
+	
 	if(_jammingType == 0) then
 	{
 		private _index = -1;
