@@ -50,6 +50,9 @@ class CfgFunctions
 			class setJammerBackpack { recompile = 1; };
 			class removeAllJammers { recompile = 1; };
 			class createInitCompleteValue { preInit = 1; };
+			class isJammed { recompile = 1; };
+			class updateJammerAngle { recompile = 1; };
+			class removeDestroyedJammers { recompile = 1; };
 		};
 		
 		class client
