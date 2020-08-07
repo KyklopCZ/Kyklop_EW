@@ -2,13 +2,21 @@ params ["_jammer", "_unit", "_detonator"];
 
 if(isServer) then
 {
-	_detonator = toLower _detonator;
+	private _properties = kyk_ew_clackersProperties select (kyk_ew_clackers find _detonator);
+	
+	if(_properties select 1 == 0) exitWith { false; };	//if information level = 0, exit
+	
 	private _direction = getPos _jammer getDir getPos _unit;
 	private _message = "<t size='1.5' color='#ff0000'>Jammer alert!</t><br /><t>Detected detonation attempt from </t>";
 	
-	switch(_detonator) do
+	switch(_properties select 1) do
 	{
-		case "ace_cellphone":
+		case 1:
+		{
+			_message = _message + "<t>Unknown</t>";
+		};
+		
+		case 2:
 		{
 			if(_direction > 315 || _direction <= 45) then
 			{
@@ -32,11 +40,9 @@ if(isServer) then
 					};
 				};
 			};
-			
-			_message = _message + "<br /><t>Detonation mechanism: </t><t color='#00ff00'>GSM</t>";
 		};
 		
-		case "ace_m26_clacker":
+		case 3:
 		{
 			_direction = _direction + random [-15, 0, 15];
 			_direction = round _direction;
@@ -53,12 +59,14 @@ if(isServer) then
 				};
 			};
 			
-			_message = _message + "<t>" + str _direction + "°</t><br /><t>Detonation mechanism: </t><t color='#00ff00'>RF Detonator</t>";
+			_message = _message + "<t>" + str _direction + "°</t>";
 		};
 		
-		default { _message = _message + "<t color='#ffff00'>Unknown</t>"; };
+		default { _message = _message + "<t color='#ff0000'>Error</t>"; };
 	};
-	
+
+	_message = _message + "<br /><t>Detonation mechanism: </t><t color='#00ff00'>" + (_properties select 2) + "</t>";
+
 	_message = parseText _message;
 	
 	if(_jammer isKindOf "Man") then

@@ -53,6 +53,9 @@ class CfgFunctions
 			class isJammed { recompile = 1; };
 			class updateJammerAngle { recompile = 1; };
 			class removeDestroyedJammers { recompile = 1; };
+			class clackerListDefinition { recompile = 1; };
+			class clackerAdd { recompile = 1; };
+			class clackerRemove { recompile = 1; };
 		};
 		
 		class client

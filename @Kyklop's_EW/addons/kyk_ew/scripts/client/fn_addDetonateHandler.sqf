@@ -2,23 +2,13 @@
 	params ["_unit", "_range", "_explosive", "_fuzeTime", "_triggerItem"];
 
 	private _returnValue = true;
+	_triggerItem = toLower _triggerItem;
 	
-	if (_triggerItem == "ace_m26_clacker" || _triggerItem == "ace_cellphone") then
+	if(_triggerItem in kyk_ew_clackers) then
 	{
-		private _jammers = [];
+		private _properties = kyk_ew_clackersProperties select (kyk_ew_clackers find _triggerItem);
 		
-		if(_triggerItem == "ace_m26_clacker") then
-		{
-			_jammers = [_explosive, 3] call kyk_ew_fnc_isJammed;
-		}
-		else
-		{
-			if(_triggerItem == "ace_cellphone") then
-			{
-				_jammers = [_explosive, 2] call kyk_ew_fnc_isJammed;
-			};
-			//Add custom clackers later
-		};
+		private _jammers = [_explosive, _properties select 0] call kyk_ew_fnc_isJammed;
 		
 		if(count _jammers > 0) then
 		{
