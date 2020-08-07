@@ -12,5 +12,7 @@ if(isServer) then
 
 	call kyk_ew_fnc_jammerDefinition;
 	
+	call kyk_ew_fnc_clackerListDefinition;
+	
 	kyk_ew_initComplete = true;
 };
