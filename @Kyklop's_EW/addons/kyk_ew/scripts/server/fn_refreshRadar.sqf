@@ -1,3 +1,16 @@
+/*
+	Author: KyklopCZ
+	
+	Description:
+	Updates the list of vehicles with a radar in a mission
+	
+	Parameter(s):
+	None
+
+	Returns:
+	Nothing
+*/
+
 if(isServer) then
 {
 	kyk_ew_radarVehiclesArray = [];

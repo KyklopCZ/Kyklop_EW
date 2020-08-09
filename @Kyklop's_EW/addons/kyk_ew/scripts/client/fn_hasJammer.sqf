@@ -1,3 +1,17 @@
+/*
+	Author: KyklopCZ
+	
+	Description:
+	Checks whether the given class has a certain jammer or detector
+
+	Parameter(s):
+		0: STRING - Classname of a class which jamming/detection capabilites are to be checked
+		1: NUMBER - Number which represents ID of a jammer (1 - Radio, 2 - GSM, 3 - RFDet, 4 - Drone, 5 - GPS, 6 - Radar, 7 - Jammer detector, 8 - Trigger signal detector)
+
+	Returns:
+	BOOL
+*/
+
 params [
 	["_className", "", ""],
 	["_jammingType", 1, 0]

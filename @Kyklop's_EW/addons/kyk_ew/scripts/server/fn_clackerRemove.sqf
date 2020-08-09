@@ -1,3 +1,16 @@
+/*
+	Author: KyklopCZ
+	
+	Description:
+	Removes a specified clacker from the list of jammable clackers.
+
+	Parameter(s):
+		0: STRING - Classname of a clacker that is to be removed from the clacker list
+
+	Returns:
+	Nothing
+*/
+
 params [
 	["_classname", "", ""]
 	];

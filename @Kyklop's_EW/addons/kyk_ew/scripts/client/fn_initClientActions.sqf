@@ -1,3 +1,16 @@
+/*
+	Author: KyklopCZ
+	
+	Description:
+	Adds actions to ACE interaction menu.
+
+	Parameter(s):
+	None
+
+	Returns:
+	Nothing
+*/
+
 #include "macros.hpp"
 
 _kyk_ew_jammerActionParent = ["JammingBackpack", "Electronic warfare", "kyk_ew\icons\ace\EW.paa", {;}, {BACKPACK_CONDITION_1 || BACKPACK_CONDITION_2}] call ace_interact_menu_fnc_createAction;

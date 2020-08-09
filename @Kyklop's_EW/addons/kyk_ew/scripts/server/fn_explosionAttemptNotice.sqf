@@ -1,3 +1,18 @@
+/*
+	Author: KyklopCZ
+	
+	Description:
+	Displays an alert with information about attempted detonation which the jammer jammed.
+
+	Parameter(s):
+		0: OBJECT - The object that jammed the detonation and the alert is to be displayed to
+		1: OBJECT - The unit which attempted the detonation (and failed miserably)
+		2: STRING - The classname of the clacker which was used to send the detonation signal
+
+	Returns:
+	Nothing
+*/
+
 params [
 	["_jammer", objNull, objNull],
 	["_unit", objNull, objNull],

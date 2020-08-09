@@ -1,3 +1,16 @@
+/*
+	Author: KyklopCZ
+	
+	Description:
+	Removes all jammers from all classes currently defined with a jammer. (Clears jammer configuration)
+
+	Parameter(s):
+	None
+
+	Returns:
+	Nothing
+*/
+
 if(isServer) then
 {
 	kyk_ew_jammersType1 = [];
