@@ -1,6 +1,8 @@
 //_jammerClassname is classname of vehicle/backpack you want to remove jamming capabilities from
 
-params ["_jammerClassname"];
+params [
+	["_jammerClassname", "", ""]
+	];
 
 if(isServer) then
 {

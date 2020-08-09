@@ -1,4 +1,8 @@
-params ["_jammer", "_unit", "_detonator"];
+params [
+	["_jammer", objNull, objNull],
+	["_unit", objNull, objNull],
+	["_detonator", "", ""]
+	];
 
 if(isServer) then
 {

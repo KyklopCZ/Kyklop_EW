@@ -1,4 +1,6 @@
-params ["_classname"];
+params [
+	["_classname", "", ""]
+	];
 
 if(isServer) then
 {

@@ -1,4 +1,7 @@
-params ["_object", "_jammingType"];	//_jammingType: 1 - Radio, 2 - GSM, 3 - RFDet, 4 - Drone, 5 - GPS, 6 - Radar
+params [
+	["_object", objNull, objNull],
+	["_jammingType", 0, 0]	//_jammingType: 1 - Radio, 2 - GSM, 3 - RFDet, 4 - Drone, 5 - GPS, 6 - Radar
+	];	
 //Returns array of jammers which are jamming given object or an empty array in case object is not jammed
 
 private _type = "";

@@ -1,4 +1,7 @@
-params ["_object", "_jammingType"];	//jammingType: 0-all, 1-radio, 2-GSM, 3-RFDet, 4-Drone, 5-GPS, 6-Radar
+params [
+	["_object", objNull, objNull],
+	["_jammingType", 7, 0]	//jammingType: 0-all, 1-radio, 2-GSM, 3-RFDet, 4-Drone, 5-GPS, 6-Radar
+	];
 
 #include "macros.hpp"
 

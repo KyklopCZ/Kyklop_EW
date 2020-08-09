@@ -1,4 +1,7 @@
-params ["_jammer", "_message"];
+params [
+	["_jammer", objNull, objNull],
+	["_message", "", ""]
+	];
 
 if(hasInterface) then
 {

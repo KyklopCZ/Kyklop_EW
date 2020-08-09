@@ -1,4 +1,7 @@
-params ["_jammer", "_callerID"];
+params [
+	["_jammer", objNull, objNull],
+	["_callerID", 2, 0]
+	];
 
 if(isServer) then
 {

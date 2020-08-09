@@ -13,7 +13,11 @@
 	This function can also be used to update properties of already defined jammer, if it has the same _type value
 */
 
-params ["_jammerClassname", "_type", "_properties"];
+params [
+	["_jammerClassname", "", ""],
+	["_type", 1, 0],
+	["_properties", [0,0,0,0,0,0,0], [], [9, 10]]
+	];
 
 if(isServer) then
 {

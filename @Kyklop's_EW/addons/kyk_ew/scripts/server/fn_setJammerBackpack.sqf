@@ -1,4 +1,6 @@
-params ["_jammerObject"];
+params [
+	["_jammerObject", objNull, [objNull]]
+	];
 
 if(isServer) then
 {

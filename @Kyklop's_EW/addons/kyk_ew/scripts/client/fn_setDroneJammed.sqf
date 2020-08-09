@@ -1,4 +1,8 @@
-params ["_unit", "_jammedDrone", "_jammedGPS"];	//_unit = drone
+params [
+	["_unit", objNull, objNull],	//_unit = drone
+	["_jammedDrone", false, false],
+	["_jammedGPS", false, false]
+	];
 
 if(_jammedDrone) then
 {

@@ -1,4 +1,6 @@
-params ["_requester"];
+params [
+	["_requester", objNull, objNull]
+	];
 
 if(isServer) then
 {

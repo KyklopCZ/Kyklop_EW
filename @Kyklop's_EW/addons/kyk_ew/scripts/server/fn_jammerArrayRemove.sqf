@@ -1,4 +1,7 @@
-params ["_jammerObject", "_jammingType"];	//jammingType: 0-all, 1-radio, 2-GSM, 3-RFDet, 4-Drone, 5-GPS, 6-Radar
+params [
+	["_jammerObject", objNull, objNull],
+	["_jammingType", 7, 0]	//jammingType: 0-all, 1-radio, 2-GSM, 3-RFDet, 4-Drone, 5-GPS, 6-Radar
+	];
 
 if(isServer) then
 {

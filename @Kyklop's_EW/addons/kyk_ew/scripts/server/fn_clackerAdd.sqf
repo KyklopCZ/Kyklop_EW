@@ -1,4 +1,7 @@
-params ["_classname", "_properties"];
+params [
+	["_classname", "", ""],
+	"_properties", [0,0,"Error"], [], [3]]
+	];
 
 if(isServer) then
 {
