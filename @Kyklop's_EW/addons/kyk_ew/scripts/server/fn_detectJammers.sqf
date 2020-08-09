@@ -1,4 +1,19 @@
-params ["_requester"];
+/*
+	Author: KyklopCZ
+	
+	Description:
+	Displays information about jammers that are jamming the given detector
+
+	Parameter(s):
+		0: OBJECT - The detector the data will be taken from and displayed to
+
+	Returns:
+	Nothing
+*/
+
+params [
+	["_requester", objNull, objNull]
+	];
 
 if(isServer) then
 {

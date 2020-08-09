@@ -1,4 +1,19 @@
-params ["_jammer"];
+/*
+	Author: KyklopCZ
+	
+	Description:
+	Displays a hint to a player whose jammer is inoperable
+
+	Parameter(s):
+		0: OBJECT - Jammer to which the alert will be displayed
+
+	Returns:
+	Nothing
+*/
+
+params [
+	["_jammer", objNull, objNull]
+	];
 
 if(isServer) then
 {

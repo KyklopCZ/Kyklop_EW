@@ -1,3 +1,16 @@
+/*
+	Author: KyklopCZ
+
+	Description:
+	Checks whether a player should see a hint and displays it if so.
+
+	Parameter(s):
+	None
+
+	Returns:
+	Nothing
+*/
+
 #include "macros.hpp"
 
 if(isServer) then

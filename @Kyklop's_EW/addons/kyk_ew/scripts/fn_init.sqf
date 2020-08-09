@@ -1,3 +1,16 @@
+/*
+	Author: KyklopCZ
+	
+	Description:
+	Initializes the mod
+
+	Parameter(s):
+	None
+
+	Returns:
+	Nothing
+*/
+
 if(isServer) then
 {
 	remoteExecCall ["kyk_ew_fnc_initClient", 0, true];

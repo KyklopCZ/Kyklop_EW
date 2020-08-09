@@ -1,3 +1,16 @@
+/*
+	Author: KyklopCZ
+	
+	Description:
+	Removes destroyed jammers and units which lost their jamming capabilities from the list of jammers
+
+	Parameter(s):
+	None
+
+	Returns:
+	Nothing
+*/
+
 if(isServer) then
 {
 	{

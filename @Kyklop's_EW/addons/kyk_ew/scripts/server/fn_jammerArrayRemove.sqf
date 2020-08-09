@@ -1,4 +1,29 @@
-params ["_jammerObject", "_jammingType"];	//jammingType: 0-all, 1-radio, 2-GSM, 3-RFDet, 4-Drone, 5-GPS, 6-Radar
+/*
+	Author: KyklopCZ
+	
+	Description:
+	Deactivates object's active jammer and removes it from the active jammer array if none jammers remain active.
+
+	Parameter(s):
+		0: OBJECT - Object which is to have it's jammer deactivated
+		1: NUMBER - Type of jammer which is to be deactivated
+			Values:
+				0 - All jammers
+				1 - Radio jammer
+				2 - GSM jammer
+				3 - RF Detonator jammer
+				4 - Drone jammer
+				5 - GPS jammer
+				6 - Radar jammer
+
+	Returns:
+	Nothing
+*/
+
+params [
+	["_jammerObject", objNull, objNull],
+	["_jammingType", 7, 0]
+	];
 
 if(isServer) then
 {

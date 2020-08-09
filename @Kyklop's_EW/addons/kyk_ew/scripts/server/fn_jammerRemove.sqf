@@ -1,6 +1,19 @@
-//_jammerClassname is classname of vehicle/backpack you want to remove jamming capabilities from
+/*
+	Author: KyklopCZ
+	
+	Description:
+	Removes jammers from specified vehicle or backpack.
 
-params ["_jammerClassname"];
+	Parameter(s):
+		0: STRING - Classname of a vehicle or backpack that should have it's jamming capabilities removed
+
+	Returns:
+	Nothing
+*/
+
+params [
+	["_jammerClassname", "", ""]
+	];
 
 if(isServer) then
 {

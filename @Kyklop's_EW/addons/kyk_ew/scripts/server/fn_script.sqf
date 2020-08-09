@@ -1,3 +1,16 @@
+/*
+	Author: KyklopCZ
+	
+	Description:
+	The main script
+
+	Parameter(s):
+	None
+
+	Returns:
+	Nothing
+*/
+
 kyk_ew_jammerMasterSwitch = true;
 kyk_ew_jammerScriptEnabled = true;
 kyk_ew_jammerUpdateInterval = 5;

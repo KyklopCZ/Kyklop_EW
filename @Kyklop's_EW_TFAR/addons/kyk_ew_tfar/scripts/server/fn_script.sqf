@@ -1,3 +1,16 @@
+/*
+	Author: KyklopCZ
+	
+	Description:
+	The main script of the TFAR radio jamming compatibility.
+
+	Parameter(s):
+	None
+
+	Returns:
+	Nothing
+*/
+
 if(isServer) then
 {
 	kyk_ew_tfar_jammerMasterSwitch = true;

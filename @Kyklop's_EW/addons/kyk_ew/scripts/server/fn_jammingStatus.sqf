@@ -1,4 +1,21 @@
-params ["_jammer", "_callerID"];
+/*
+	Author: KyklopCZ
+	
+	Description:
+	Displays a hint with information about jamming and detection capabilities of a vehicle or backpack and it's current state to a player.
+
+	Parameter(s):
+		0: OBJECT - Unit which capabilites and state should be checked
+		1: NUMBER - Number of a player who made the request and to who the hint will be displayed
+
+	Returns:
+	Nothing
+*/
+
+params [
+	["_jammer", objNull, objNull],
+	["_callerID", 2, 0]
+	];
 
 if(isServer) then
 {

@@ -1,5 +1,28 @@
-params ["_object", "_jammingType"];	//_jammingType: 1 - Radio, 2 - GSM, 3 - RFDet, 4 - Drone, 5 - GPS, 6 - Radar
-//Returns array of jammers which are jamming given object or an empty array in case object is not jammed
+/*
+	Author: KyklopCZ
+	
+	Description:
+	Checks which jammers are jamming the specified object.
+
+	Parameter(s):
+		0: OBJECT - The object that will be checked
+		1: NUMBER - The type of jamming that is to be checked
+			Values:
+				1 - Radio
+				2 - GSM
+				3 - RF Detonator
+				4 - Drone
+				5 - GPS
+				6 - Radar
+
+	Returns:
+	ARRAY - An array of jammers which are jamming the object
+*/
+
+params [
+	["_object", objNull, objNull],
+	["_jammingType", 0, 0]
+	];
 
 private _type = "";
 

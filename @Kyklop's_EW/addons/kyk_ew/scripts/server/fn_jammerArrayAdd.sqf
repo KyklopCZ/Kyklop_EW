@@ -1,4 +1,29 @@
-params ["_object", "_jammingType"];	//jammingType: 0-all, 1-radio, 2-GSM, 3-RFDet, 4-Drone, 5-GPS, 6-Radar
+/*
+	Author: KyklopCZ
+	
+	Description:
+	Adds an object into an array of active jammers and sets or updates it's effective ranges.
+
+	Parameter(s):
+		0: OBJECT - Object which is to be added to the array
+		1: NUMBER - Type of jammer which is to be activated
+			Values:
+				0 - All available jammers
+				1 - Radio jammer
+				2 - GSM jammer
+				3 - RF Detonator jammer
+				4 - Drone jammer
+				5 - GPS jammer
+				6 - Radar jammer
+
+	Returns:
+	Nothing
+*/
+
+params [
+	["_object", objNull, objNull],
+	["_jammingType", 7, 0]	//jammingType: 0-all, 1-radio, 2-GSM, 3-RFDet, 4-Drone, 5-GPS, 6-Radar
+	];
 
 #include "macros.hpp"
 

@@ -1,3 +1,16 @@
+/*
+	Author: KyklopCZ
+	
+	Description:
+	The main script of the ACRE jamming compatibility.
+
+	Parameter(s):
+	None
+	
+	Returns:
+	Nothing
+*/
+
 if(isServer) then
 {
 	kyk_ew_acre_jammerMasterSwitch = true;

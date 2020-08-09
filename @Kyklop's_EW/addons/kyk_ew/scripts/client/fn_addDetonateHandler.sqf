@@ -1,3 +1,16 @@
+/*
+	Author: KyklopCZ
+	
+	Description:
+	Adds an ACE detonate handler, which enables jamming of a detonation signal, to a player
+
+	Parameter(s):
+	None
+
+	Returns:
+	Nothing
+*/
+
 [{
 	params ["_unit", "_range", "_explosive", "_fuzeTime", "_triggerItem"];
 

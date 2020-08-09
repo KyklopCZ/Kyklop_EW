@@ -1,3 +1,17 @@
+/*
+	Author: ACRE2Team & KyklopCZ
+	
+	Description:
+	The function that is used to calculate the signal and the effects of jamming on it
+	All of the code between lines 17 and 96 was created by the ACRE2Team, changes made by KyklopCZ are described in the last comment of each changed line
+
+	Parameter(s):
+	Refer to ACRE2Team's code below
+
+	Returns:
+	Refer to ACRE2Team's code below
+*/
+
 //ACRE2Team code start - All credit for this part of code goes to ACRE2 Team (Original code: https://github.com/IDI-Systems/acre2/blob/master/addons/sys_signal/fnc_getSignal.sqf#L11 )
 
 #include "\idi\acre\addons\sys_signal\script_component.hpp"	//The "\idi\acre\addons\sys_signal" part wasn't added by ACRE2Team, but was necessary for this reference to work
@@ -20,7 +34,7 @@
  * Public: No
  */
 
-//if (!isNil QGVAR(customSignalFunc)) exitWith { _this call GVAR(customSignalFunc); };	This comment wasn't done by ACRE2TEAM, but was necessary as it's absence would create an infinite loop
+//if (!isNil QGVAR(customSignalFunc)) exitWith { _this call GVAR(customSignalFunc); };	//This comment wasn't done by ACRE2TEAM, but was necessary as it's absence would create an infinite loop
 
 params ["_f", "_mW", "_receiverClass", "_transmitterClass"];
 

@@ -1,19 +1,37 @@
 /*
-	_jammerClassname is classname of vehicle/backpack you want to set as jammer
+	Author: KyklopCZ
 	
-	_type is 1 or 2 (if 1 jammer is only able to turn on/off, if 2 jammer is able to turn on/off specific jamming types (Drone, Radar, Radio,...))
-	
-	_properties is array in format [directed, radioJammingRange, gsmJammingRange, rfDetJammingRange, droneJammingRange, gpsJammingRange, radarJammingRange, jammerDetector, triggerSignalDetector, effectiveAngle] where
-		directed must be 0 (therefore jammer is non-directed, directed player-deployable jammers will be added later)
-		radioJammingRange - radarJammingRange sets effective jamming ranges for specific types of jamming in meters (if you want to disable jammer, set it's range to 0)
-		jammerDetector sets whether jammer will be able to discover other jammers (1) or not (0)
-		triggerSignalDetector sets whether alert will be displayed whenever jammer jams remote-detonated explosives (1) or not (0)
-		effectiveAngle sets effective angle of a directional jammer (has no effect with non-directional jammer)
-		
-	This function can also be used to update properties of already defined jammer, if it has the same _type value
+	Description:
+	Defines jamming and detection capabilites a vehicle or a backpack. This function can be used to either define a new jammer or edit the properties of an already existing one.
+
+	Parameter(s):
+		0: STRING - Classname of a vehicle or backpack which jamming properties will be changed
+		1: NUMBER - Type of a jammer
+			Values can be 1 or 2 (if 1, jammer is only capable of turning on/off, if 2, jammer is able to turn on/off specific jamming types (Drone, Radar, Radio,...))
+		2: ARRAY - An array with jammer's properties
+			0: NUMBER - 0 if jammer is non-directional, 1 if it's directional
+			1: NUMBER - Radio jamming range of a jammer
+			2: NUMBER - GSM jamming range of a jammer
+			3: NUMBER - RF Detonator jamming range of a jammer
+			4: NUMBER - Drone jamming range of a jammer
+			5: NUMBER - GPS jamming range of a jammer
+			6: NUMBER - Radar jamming range of a jammer
+			7: NUMBER - 1 if jammer has a jammer detector, 0 if not
+			8: NUMBER - 1 if jammer has a trigger signal detector, 0 if not
+			9 (Optional): NUMBER - Effective angle of a directional jammer
+
+	Returns:
+	Nothing or false if unsuccessful
 */
 
-params ["_jammerClassname", "_type", "_properties"];
+params [
+	["_jammerClassname", "", ""],
+	["_type", 1, 0],
+	["_properties", [0,0,0,0,0,0,0,0,0], [], [9, 10]]
+	];
+
+if (!(_type == 1 || _type == 2)) exitWith { ["The jammer type must be 1 or 2."] call BIS_fnc_error; false };
+if (_properties select 0 == 1 && count _properties != 10) exitWith { ["Invalid number of properties for a directional jammer."] call BIS_fnc_error; false };
 
 if(isServer) then
 {
