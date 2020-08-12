@@ -12,7 +12,7 @@
 */
 
 params [
-	["_classname", "", ""]
+	["_classname", "", [""]]
 	];
 
 if(isServer) then

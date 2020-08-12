@@ -13,8 +13,8 @@
 */
 
 params [
-	["_jammer", objNull, objNull],
-	["_callerID", 2, 0]
+	["_jammer", objNull, [objNull]],
+	["_callerID", 2, [0]]
 	];
 
 if(isServer) then

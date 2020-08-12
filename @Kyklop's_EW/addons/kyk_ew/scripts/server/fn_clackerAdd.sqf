@@ -28,8 +28,8 @@
 */
 
 params [
-	["_classname", "", ""],
-	["_properties", [0, 0, "Error"], [], [3]]
+	["_classname", "", [""]],
+	["_properties", [0, 0, "Error"], [[]], [3]]
 	];
 
 if(isServer) then

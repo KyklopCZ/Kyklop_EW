@@ -25,9 +25,9 @@
 */
 
 params [
-	["_jammerClassname", "", ""],
-	["_type", 1, 0],
-	["_properties", [0,0,0,0,0,0,0,0,0], [], [9, 10]]
+	["_jammerClassname", "", [""]],
+	["_type", 1, [0]],
+	["_properties", [0,0,0,0,0,0,0,0,0], [[]], [9, 10]]
 	];
 
 if (!(_type == 1 || _type == 2)) exitWith { ["The jammer type must be 1 or 2."] call BIS_fnc_error; false };
