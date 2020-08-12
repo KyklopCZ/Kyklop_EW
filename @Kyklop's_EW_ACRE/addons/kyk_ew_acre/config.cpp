@@ -5,9 +5,9 @@ class CfgPatches
 		units[] = {};
 		requiredAddons[] = { "kyk_ew", "acre_sys_signal", "acre_api" };
 		author = "KyklopCZ";
-		version = 1.2.0;
-		versionStr = "1.2.0";
-		versionAr[] = {1,2,0};
+		version = 1.2.1;
+		versionStr = "1.2.1";
+		versionAr[] = {1,2,1};
 	};
 };
 

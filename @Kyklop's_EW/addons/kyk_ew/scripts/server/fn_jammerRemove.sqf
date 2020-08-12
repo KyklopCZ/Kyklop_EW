@@ -12,7 +12,7 @@
 */
 
 params [
-	["_jammerClassname", "", ""]
+	["_jammerClassname", "", [""]]
 	];
 
 if(isServer) then

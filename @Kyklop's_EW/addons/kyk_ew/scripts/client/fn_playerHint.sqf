@@ -13,8 +13,8 @@
 */
 
 params [
-	["_jammer", objNull, objNull],
-	["_message", "", ""]
+	["_jammer", objNull, [objNull]],
+	["_message", "", [parseText ""]]
 	];
 
 if(hasInterface) then

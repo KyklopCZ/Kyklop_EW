@@ -12,7 +12,7 @@
 */
 
 params [
-	["_requester", objNull, objNull]
+	["_requester", objNull, [objNull]]
 	];
 
 if(isServer) then

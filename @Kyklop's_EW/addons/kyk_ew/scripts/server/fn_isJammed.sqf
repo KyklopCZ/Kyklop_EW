@@ -20,8 +20,8 @@
 */
 
 params [
-	["_object", objNull, objNull],
-	["_jammingType", 0, 0]
+	["_object", objNull, [objNull]],
+	["_jammingType", 0, [0]]
 	];
 
 private _type = "";

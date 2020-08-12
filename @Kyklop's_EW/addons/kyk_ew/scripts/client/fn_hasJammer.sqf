@@ -13,8 +13,8 @@
 */
 
 params [
-	["_className", "", ""],
-	["_jammingType", 1, 0]
+	["_className", "", [""]],
+	["_jammingType", 1, [0]]
 	];
 
 private _index = kyk_ew_jammersType2 find _className;

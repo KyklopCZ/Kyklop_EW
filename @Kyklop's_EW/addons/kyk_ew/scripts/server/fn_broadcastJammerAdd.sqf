@@ -18,13 +18,13 @@
 */
 
 params [
-	["_jammer", objNull, objNull],
-	["_radioDistance", 0, 0],
-	["_gsmDistance", 0, 0],
-	["_rfDetDistance", 0, 0],
-	["_droneDistance", 0, 0],
-	["_gpsDistance", 0, 0],
-	["_radarDistance", 0, 0]
+	["_jammer", objNull, [objNull]],
+	["_radioDistance", 0, [0]],
+	["_gsmDistance", 0, [0]],
+	["_rfDetDistance", 0, [0]],
+	["_droneDistance", 0, [0]],
+	["_gpsDistance", 0, [0]],
+	["_radarDistance", 0, [0]]
 	];
 
 #include "macros.hpp"

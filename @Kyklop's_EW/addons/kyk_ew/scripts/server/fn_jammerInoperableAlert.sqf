@@ -12,7 +12,7 @@
 */
 
 params [
-	["_jammer", objNull, objNull]
+	["_jammer", objNull, [objNull]]
 	];
 
 if(isServer) then

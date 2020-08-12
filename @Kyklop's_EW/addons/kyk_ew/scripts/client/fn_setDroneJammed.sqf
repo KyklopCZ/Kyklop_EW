@@ -14,9 +14,9 @@
 */
 
 params [
-	["_unit", objNull, objNull],	//_unit = drone
-	["_jammedDrone", false, false],
-	["_jammedGPS", false, false]
+	["_unit", objNull, [objNull]],	//_unit = drone
+	["_jammedDrone", false, [false]],
+	["_jammedGPS", false, [false]]
 	];
 
 if(_jammedDrone) then

@@ -21,8 +21,8 @@
 */
 
 params [
-	["_jammerObject", objNull, objNull],
-	["_jammingType", 7, 0]
+	["_jammerObject", objNull, [objNull]],
+	["_jammingType", 7, [0]]
 	];
 
 if(isServer) then
