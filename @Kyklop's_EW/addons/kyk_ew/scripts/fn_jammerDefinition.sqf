@@ -44,6 +44,11 @@ if(isServer) then
 	["B_RadioBag_01_oucamo_F", 1, RADIO_PROPERTIES] call kyk_ew_fnc_jammerAdd;
 	["B_RadioBag_01_ghex_F", 1, RADIO_PROPERTIES] call kyk_ew_fnc_jammerAdd;
 	
+	["O_Plane_Fighter_02_F", 2, F22_PROPERTIES] call kyk_ew_fnc_jammerAdd;
+	["O_Plane_Fighter_02_Stealth_F", 2, F22_PROPERTIES] call kyk_ew_fnc_jammerAdd;
+	["B_Plane_Fighter_01_F", 2, F22_PROPERTIES] call kyk_ew_fnc_jammerAdd;
+	["B_Plane_Fighter_01_Stealth_F", 2, F22_PROPERTIES] call kyk_ew_fnc_jammerAdd;
+	
 	if("tfar_backpacks" in activatedAddons) then
 	{
 		["TFAR_anarc164", 1, RADIO_PROPERTIES] call kyk_ew_fnc_jammerAdd;
