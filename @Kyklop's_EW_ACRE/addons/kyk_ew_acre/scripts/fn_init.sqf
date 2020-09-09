@@ -11,11 +11,10 @@
 	Nothing
 */
 
-waitUntil {kyk_ew_initComplete};
-
-[kyk_ew_acre_fnc_signalFunction] call acre_api_fnc_setCustomSignalFunc;
-
 if(isServer) then
 {
+	waitUntil {kyk_ew_initComplete};
+	
+	[kyk_ew_acre_fnc_signalFunction] remoteExecCall ["acre_api_fnc_setCustomSignalFunc", 0, true];
 	[] spawn kyk_ew_acre_fnc_script;
 };
