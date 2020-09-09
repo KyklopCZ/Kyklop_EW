@@ -11,9 +11,8 @@
 	Nothing
 */
 
-waitUntil {kyk_ew_initComplete};
-
 if(isServer) then
 {
+	waitUntil {kyk_ew_initComplete};
 	[] spawn kyk_ew_tfar_fnc_script;
 };
