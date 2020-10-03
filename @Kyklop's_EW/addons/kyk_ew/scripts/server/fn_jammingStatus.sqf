@@ -68,71 +68,89 @@ if(isServer) then
 		};
 		_status = _status + "<br /><br />";
 		
-		_status = _status + "<t size='1.5'>Radio jammer</t><br /><t>Status: </t>";
-		if(_jammer getVariable ["kyk_ew_jammingActiveRadio", false]) then
+		if(_jammerProp select 1 > 0) then
 		{
-			_status = _status + "<t color='#00ff00'>Active</t><br />";
-		}
-		else
-		{
-			_status = _status + "<t color='#ff0000'>Inactive</t><br />"
+			_status = _status + "<t size='1.5'>Radio jammer</t><br /><t>Status: </t>";
+			if(_jammer getVariable ["kyk_ew_jammingActiveRadio", false]) then
+			{
+				_status = _status + "<t color='#00ff00'>Active</t><br />";
+			}
+			else
+			{
+				_status = _status + "<t color='#ff0000'>Inactive</t><br />"
+			};
+			_status = _status + "<t>Range: " + str (_jammerProp select 1) + " m</t><br />";
 		};
-		_status = _status + "<t>Range: " + str (_jammerProp select 1) + " m</t><br />";
 		
-		_status = _status + "<br /><t size='1.5'>GSM jammer</t><br /><t>Status: </t>";
-		if(_jammer getVariable ["kyk_ew_jammingActiveGSM", false]) then
+		if(_jammerProp select 2 > 0) then
 		{
-			_status = _status + "<t color='#00ff00'>Active</t><br />";
-		}
-		else
-		{
-			_status = _status + "<t color='#ff0000'>Inactive</t><br />"
+			_status = _status + "<br /><t size='1.5'>GSM jammer</t><br /><t>Status: </t>";
+			if(_jammer getVariable ["kyk_ew_jammingActiveGSM", false]) then
+			{
+				_status = _status + "<t color='#00ff00'>Active</t><br />";
+			}
+			else
+			{
+				_status = _status + "<t color='#ff0000'>Inactive</t><br />"
+			};
+			_status = _status + "<t>Range: " + str (_jammerProp select 2) + " m</t><br />";
 		};
-		_status = _status + "<t>Range: " + str (_jammerProp select 2) + " m</t><br />";
 		
-		_status = _status + "<br /><t size='1.5'>RF Det. jammer</t><br /><t>Status: </t>";
-		if(_jammer getVariable ["kyk_ew_jammingActiveRFDetonator", false]) then
+		if(_jammerProp select 3 > 0) then
 		{
-			_status = _status + "<t color='#00ff00'>Active</t><br />";
-		}
-		else
-		{
-			_status = _status + "<t color='#ff0000'>Inactive</t><br />"
+			_status = _status + "<br /><t size='1.5'>RF Det. jammer</t><br /><t>Status: </t>";
+			if(_jammer getVariable ["kyk_ew_jammingActiveRFDetonator", false]) then
+			{
+				_status = _status + "<t color='#00ff00'>Active</t><br />";
+			}
+			else
+			{
+				_status = _status + "<t color='#ff0000'>Inactive</t><br />"
+			};
+			_status = _status + "<t>Range: " + str (_jammerProp select 3) + " m</t><br />";
 		};
-		_status = _status + "<t>Range: " + str (_jammerProp select 3) + " m</t><br />";
 		
-		_status = _status + "<br /><t size='1.5'>Drone jammer</t><br /><t>Status: </t>";
-		if(_jammer getVariable ["kyk_ew_jammingActiveDrone", false]) then
+		if(_jammerProp select 4 > 0) then
 		{
-			_status = _status + "<t color='#00ff00'>Active</t><br />";
-		}
-		else
-		{
-			_status = _status + "<t color='#ff0000'>Inactive</t><br />"
+			_status = _status + "<br /><t size='1.5'>Drone jammer</t><br /><t>Status: </t>";
+			if(_jammer getVariable ["kyk_ew_jammingActiveDrone", false]) then
+			{
+				_status = _status + "<t color='#00ff00'>Active</t><br />";
+			}
+			else
+			{
+				_status = _status + "<t color='#ff0000'>Inactive</t><br />"
+			};
+			_status = _status + "<t>Range: " + str (_jammerProp select 4) + " m</t><br />";
 		};
-		_status = _status + "<t>Range: " + str (_jammerProp select 4) + " m</t><br />";
 		
-		_status = _status + "<br /><t size='1.5'>GPS jammer</t><br /><t>Status: </t>";
-		if(_jammer getVariable ["kyk_ew_jammingActiveGPS", false]) then
+		if(_jammerProp select 5 > 0) then
 		{
-			_status = _status + "<t color='#00ff00'>Active</t><br />";
-		}
-		else
-		{
-			_status = _status + "<t color='#ff0000'>Inactive</t><br />"
+			_status = _status + "<br /><t size='1.5'>GPS jammer</t><br /><t>Status: </t>";
+			if(_jammer getVariable ["kyk_ew_jammingActiveGPS", false]) then
+			{
+				_status = _status + "<t color='#00ff00'>Active</t><br />";
+			}
+			else
+			{
+				_status = _status + "<t color='#ff0000'>Inactive</t><br />"
+			};
+			_status = _status + "<t>Range: " + str (_jammerProp select 5) + " m</t><br />";
 		};
-		_status = _status + "<t>Range: " + str (_jammerProp select 5) + " m</t><br />";
 		
-		_status = _status + "<br /><t size='1.5'>Radar jammer</t><br /><t>Status: </t>";
-		if(_jammer getVariable ["kyk_ew_jammingActiveRadar", false]) then
+		if(_jammerProp select 6 > 0) then
 		{
-			_status = _status + "<t color='#00ff00'>Active</t><br />";
-		}
-		else
-		{
-			_status = _status + "<t color='#ff0000'>Inactive</t><br />"
+			_status = _status + "<br /><t size='1.5'>Radar jammer</t><br /><t>Status: </t>";
+			if(_jammer getVariable ["kyk_ew_jammingActiveRadar", false]) then
+			{
+				_status = _status + "<t color='#00ff00'>Active</t><br />";
+			}
+			else
+			{
+				_status = _status + "<t color='#ff0000'>Inactive</t><br />"
+			};
+			_status = _status + "<t>Range: " + str (_jammerProp select 6) + " m</t><br />";
 		};
-		_status = _status + "<t>Range: " + str (_jammerProp select 6) + " m</t><br />";
 		
 		_status = _status + "<br /><t size='1.5'>Other</t><br /><t>Jammer detector: </t>";
 		if(_jammerProp select 7 == 0) then
