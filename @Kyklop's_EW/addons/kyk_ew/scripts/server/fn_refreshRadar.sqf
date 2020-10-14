@@ -16,10 +16,16 @@ if(isServer) then
 	kyk_ew_radarVehiclesArray = [];
 
 	{
-		if(listVehicleSensors _x select 0 find "ActiveRadarSensorComponent" != -1) then
+		private _sensors = listVehicleSensors _x;
+		private _vehicle = _x;
+		
 		{
-			_x setVariable ["kyk_ew_hasRadar", true];
-		};
+			if(_x select 0 == "ActiveRadarSensorComponent") then
+			{
+				_vehicle setVariable ["kyk_ew_hasRadar", true];
+				break;
+			};
+		} forEach _sensors;
 		
 		if(_x getVariable "kyk_ew_hasRadar") then
 		{
