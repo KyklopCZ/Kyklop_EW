@@ -246,6 +246,7 @@ if(isServer) then
 	{
 		["rhsgref_cdf_gaz66_r142", 2, GAZ66_R142_PROPERTIES] call kyk_ew_fnc_jammerAdd;
 		["rhsgref_ins_g_gaz66_r142", 2, GAZ66_R142_PROPERTIES] call kyk_ew_fnc_jammerAdd;
+		["rhsgref_cdf_b_gaz66_r142", 2, GAZ66_R142_PROPERTIES] call kyk_ew_fnc_jammerAdd;
 	};
 	
 	if("flan_ea18g_f" in activatedAddons) then
