@@ -20,12 +20,13 @@ if(isServer) then
 		{
 			private _sensors = listVehicleSensors _x;
 			private _vehicle = _x;
+			scopeName "SensorSearch";
 			
 			{
 				if(_x select 0 == "ActiveRadarSensorComponent") then
 				{
 					_vehicle setVariable ["kyk_ew_hasRadar", true];
-					break;
+					breakOut "SensorSearch";
 				};
 			} forEach _sensors;
 			
