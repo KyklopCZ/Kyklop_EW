@@ -181,6 +181,10 @@ if(isServer) then
 		["rhsusf_m1240a1_mk19crows_usarmy_d", 1, DUKE_VEHICLE_PROPERTIES] call kyk_ew_fnc_jammerAdd;
 		["rhsusf_m1240a1_mk19_usarmy_d", 1, DUKE_VEHICLE_PROPERTIES] call kyk_ew_fnc_jammerAdd;
 		["rhsusf_m1a2sep1tuskiid_usarmy", 1, DUKE_VEHICLE_PROPERTIES] call kyk_ew_fnc_jammerAdd;
+		["rhsusf_stryker_m1126_m2_d", 1, DUKE_VEHICLE_PROPERTIES] call kyk_ew_fnc_jammerAdd;
+		["rhsusf_stryker_m1126_mk19_d", 1, DUKE_VEHICLE_PROPERTIES] call kyk_ew_fnc_jammerAdd;
+		["rhsusf_stryker_m1132_m2_np_d", 1, DUKE_VEHICLE_PROPERTIES] call kyk_ew_fnc_jammerAdd;
+		["rhsusf_stryker_m1132_m2_d", 1, DUKE_VEHICLE_PROPERTIES] call kyk_ew_fnc_jammerAdd;
 		["RHS_M2A3_BUSKI_wd", 1, DUKE_VEHICLE_PROPERTIES] call kyk_ew_fnc_jammerAdd;
 		["RHS_M2A3_BUSKIII_wd", 1, DUKE_VEHICLE_PROPERTIES] call kyk_ew_fnc_jammerAdd;
 		["rhsusf_M1117_W", 1, DUKE_VEHICLE_PROPERTIES] call kyk_ew_fnc_jammerAdd;
@@ -221,6 +225,10 @@ if(isServer) then
 		["rhsusf_m1240a1_m240_usmc_wd", 1, DUKE_VEHICLE_PROPERTIES] call kyk_ew_fnc_jammerAdd;
 		["rhsusf_m1240a1_mk19crows_usmc_wd", 1, DUKE_VEHICLE_PROPERTIES] call kyk_ew_fnc_jammerAdd;
 		["rhsusf_m1240a1_mk19_usmc_wd", 1, DUKE_VEHICLE_PROPERTIES] call kyk_ew_fnc_jammerAdd;
+		["rhsusf_stryker_m1126_m2_wd", 1, DUKE_VEHICLE_PROPERTIES] call kyk_ew_fnc_jammerAdd;
+		["rhsusf_stryker_m1126_mk19_wd", 1, DUKE_VEHICLE_PROPERTIES] call kyk_ew_fnc_jammerAdd;
+		["rhsusf_stryker_m1132_m2_np_wd", 1, DUKE_VEHICLE_PROPERTIES] call kyk_ew_fnc_jammerAdd;
+		["rhsusf_stryker_m1132_m2_wd", 1, DUKE_VEHICLE_PROPERTIES] call kyk_ew_fnc_jammerAdd;
 		["rhsusf_f22", 2, F22_PROPERTIES] call kyk_ew_fnc_jammerAdd;
 	};
 	
